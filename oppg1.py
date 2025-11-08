@@ -19,7 +19,7 @@ def utregning():
         
         f_aar = input('Hvilket år er du født? ') # Input som gir fødsesår
 
-        if(f_aar.lower() == "avslutt"): #Legger inn en betingelse hvis bruker skriver avslutt istedet for km så avsluttes programmet
+        if(f_aar.lower() == "avslutt"): #Legger inn en betingelse hvis bruker skriver avslutt istedet for verdi så avsluttes programmet
             exit()                        #Konverterer input til småbokstaver for å sikre hvis bruker skriver med store bokstaver eller en blading
         
         try: # Gjør sjekk på input data fra brukerern
