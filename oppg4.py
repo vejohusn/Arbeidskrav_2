@@ -25,11 +25,11 @@ print("*******************************************************************")
 # FUNKSJON FOR Å MOTTA INNDATA (land) FRA BRUKEREN AV PROGRAMMET OG PRINTE INBYGGERE EVT, KALLE FUNKSJON FOR Å LEGGE TIL
 def inndata(): 
         
-    land = input('Skriv inn land: ') # Input som gir gradtallet
+    land = input('Skriv inn land: ') # Input som gir landet
 
     land = land.lower() #Konverterer input til småbokstaver for å sikre hvis bruker skriver med store bokstaver eller en blading
     
-    if(land == "avslutt"): #Legger inn en betingelse hvis bruker skriver avslutt istedet for km så avsluttes programmet
+    if(land == "avslutt"): #Legger inn en betingelse hvis bruker skriver avslutt istedet for verdi så avsluttes programmet
         exit()    
 
     land = land.capitalize() #Setter stor forbokstav for å sikre at alle skrivemåter inn blir konvertert slik dict er bygget opp. 
@@ -41,7 +41,7 @@ def inndata():
         else:
             svar = input(f"Landet {land} finnes ikke i dataene, fil du legge det til? svar: J for ja eller N for nei: ")
             if svar.lower() == "j":
-                ny_data(land)
+                ny_data(land) #Siden landet ikke finnes og bruker ønsker å legge det til kalles funksjon for å gjøre dette.
         
     except ValueError:
         print("---FEIL---") # Skriver to linjer med tilbakemelding til brukeren om at han har skrevet inn feil format eller verdi.
